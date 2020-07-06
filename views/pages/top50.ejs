@@ -1,2 +1,15 @@
 <%- include('../partials/header', {title: title}) %>
+<main>
+    <div>
+        <ul>
+            <% top50.forEach( song => { %>
+                <%- include('../partials/song', { title: song.title, 
+                                                    rank: song.rank,
+                                                     artist: song.artist, 
+                                                     streams: song.streams, 
+                                                      publicationDate: song.publicationDate}) %>
+            <% }); %>
+        </ul>
+    </div>
+</main>
 <%- include('../partials/footer')  %>

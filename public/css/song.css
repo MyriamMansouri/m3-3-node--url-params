@@ -1,1 +1,37 @@
 /* song css */
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 20px;
+    border-bottom: solid 1px black;
+}
+
+.rank-section > *, .title-section > *, .date-section > *{
+    margin-bottom: 5px;
+}
+.rank-section{
+    margin-right: 18px;
+}
+.rank {
+    font-weight: bold;
+    font-size: 2rem;
+
+}
+.streams {
+    font-size: 0.8rem;
+}
+.title-section {
+    flex:8
+}
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.artist {
+    font-style: italic;
+}
+.date {
+    font-size: 1rem;;
+}

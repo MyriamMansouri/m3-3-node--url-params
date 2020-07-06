@@ -20,6 +20,7 @@ app.get('/top50', (req, res) => {
     res.render('pages/top50', {
         status: 200,
         title: 'Top 50 Songs Streamed on Spotify',
+        top50 : top50,
         path: req.originalUrl
     });
 });
@@ -28,7 +29,7 @@ app.get('/top50', (req, res) => {
 app.get('*', (req, res) => {
     res.status(404);
     res.render('pages/fourOhFour', {
-        status: 400,
+        status: 404,
         title: 'I got nothing',
         path: req.originalUrl
     });
