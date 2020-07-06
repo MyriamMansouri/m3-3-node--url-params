@@ -2,7 +2,7 @@
 <main>
     <div>
         <ul>
-            <% top50.forEach( song => { %>
+            <% songs.forEach( song => { %>
                 <%- include('../partials/song', { title: song.title, 
                                                     rank: song.rank,
                                                      artist: song.artist, 
