@@ -4,8 +4,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin: 20px;
+    margin-bottom: 20px;
     border-bottom: solid 1px black;
+}
+.song:last-child {
+    margin-bottom: 0;
 }
 
 .rank-section > *, .title-section > *, .date-section > *{
