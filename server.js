@@ -15,11 +15,20 @@ app.use(express.urlencoded({extended: false}));
 app.set('view engine', 'ejs');
 
 // endpoints here
+app.get('/top50', (req, res) => {
+    res.status(200);
+    res.render('pages/top50', {
+        status: 200,
+        title: 'Top 50 Songs Streamed on Spotify',
+        path: req.originalUrl
+    });
+});
 
 // handle 404s
 app.get('*', (req, res) => {
     res.status(404);
     res.render('pages/fourOhFour', {
+        status: 400,
         title: 'I got nothing',
         path: req.originalUrl
     });
