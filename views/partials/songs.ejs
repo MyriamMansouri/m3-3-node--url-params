@@ -1,0 +1,11 @@
+<div>
+    <ul>
+        <% songs.forEach( song => { %>
+            <%- include('../partials/song', { title: song.title, 
+                                                rank: song.rank,
+                                                 artist: song.artist, 
+                                                 streams: song.streams, 
+                                                  publicationDate: song.publicationDate}) %>
+        <% }); %>
+    </ul>
+</div>

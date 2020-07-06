@@ -1,0 +1,11 @@
+<%- include('../partials/header', { title }) %>
+<main>
+    <div class="song-page">
+        <%- include('../partials/songTile', { title: song.title, 
+            rank: song.rank,
+            artist: song.artist, 
+            streams: song.streams, 
+            publicationDate: song.publicationDate}) %>
+    </div>
+</main>
+<%- include('../partials/footer')  %>

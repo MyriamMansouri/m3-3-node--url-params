@@ -1,1 +1,11 @@
 /* song page css */
+.song-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tile {
+    box-shadow: 7px 7px 29px -14px rgba(158,155,158,1);
+}

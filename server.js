@@ -60,12 +60,13 @@ app.get("/top50/popular-artist", (req, res) => {
 app.get("/top50/song/:rank", (req, res) => {
   res.status(200);
   const rank = req.params.rank;
-  const songObj = {};
+  let songObj = {};
+
   top50.forEach((song) => {
-    if (song.rank === rank) songObj = song;
+    if (song.rank === parseInt(rank)) songObj = song;
   });
-  const song = top50[Object.values(top50)];
-  res.render("pages/song-page", {
+
+  res.render("pages/songPage", {
     status: 200,
     title: `Song #${rank}`,
     song: songObj,
