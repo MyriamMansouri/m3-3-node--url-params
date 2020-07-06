@@ -1,4 +1,5 @@
 'use strict';
+const express = require('express');
 
 const morgan = require('morgan');
 
@@ -16,7 +17,7 @@ app.set('view engine', 'ejs');
 // endpoints here
 
 // handle 404s
-app.git('*', (req, res) => {
+app.get('*', (req, res) => {
     res.status(404);
     res.render('pages/fourOhFour', {
         title: 'I got nothing',
@@ -24,4 +25,4 @@ app.git('*', (req, res) => {
     });
 });
 
-get.listen(PORT, () => console.log(`Listening on port ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
