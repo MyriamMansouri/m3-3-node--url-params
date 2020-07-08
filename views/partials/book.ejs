@@ -1,0 +1,11 @@
+<li class="wrapper">
+    <div class="id-section">
+        <div class="id"><%- `${book.id}` %></div>
+        <div class="type"><%- `${book.type}` %></div>
+    </div>
+
+    <div class="title-section">
+        <a href= <%=`/library/book/${book.id}`%> class="title link"><%- `${book.title}` %></a>
+        <div class="author"><%- `${book.author}` %></div>
+    </div>
+</li>

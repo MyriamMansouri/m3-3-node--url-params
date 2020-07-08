@@ -1,0 +1,12 @@
+<div class="tile">
+        <div class="title-tile">
+                <h2 class="title"><%- `${book.title}` %></h2>
+                <h3 class="author"><%- `${book.author}` %></h3>
+        </div>
+        <img src= <%= book.imgUrl %> class="img-tile">
+        <p class="description"><%- `${book.description}` %></p>
+        <div class="navigate">
+                <a href=<%- `/library/book/${book.id - 1}` %> id="previous">Previous</a>
+                <a href=<%- `/library/book/${book.id + 1}` %> id="next">Next</a>
+        </div>
+</div>

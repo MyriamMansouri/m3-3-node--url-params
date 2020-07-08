@@ -133,3 +133,7 @@ ol,
 ul {
   margin-bottom: 1em;
 }
+
+a {
+  color:inherit;
+}

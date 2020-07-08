@@ -14,26 +14,34 @@
     width:400px;
     height: 400px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 
-.tile > * {
-    width: 100%;;
-}
 .title-tile {
-    padding-bottom: 20px;
+    width: 100%;
+
+    margin-bottom:10px;
     font-size: 2rem;
     font-weight: bold;
     border-bottom: solid 1px black;
 }
 
 .artist-tile {
-
+    width:100%;
 }
 
 .streams-tile{
+    width: 100%;;
     font-size: 10rem;
     font-weight: bold;
     color:gray
+}
+
+.navigate {
+    align-self: flex-end;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }

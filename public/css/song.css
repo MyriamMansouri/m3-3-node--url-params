@@ -1,6 +1,6 @@
 /* song css */
 
-.song {
+.wrapper {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -11,30 +11,42 @@
     margin-bottom: 0;
 }
 
-.rank-section > *, .title-section > *, .date-section > *{
+.rank-section > *, .title-section > *, .date-section > *, .id-section > * {
     margin-bottom: 5px;
 }
-.rank-section{
+.rank-section, .id-section{
     margin-right: 18px;
 }
-.rank {
+
+.rank, .id {
     font-weight: bold;
     font-size: 2rem;
-
 }
-.streams {
+
+.streams, .type {
     font-size: 0.8rem;
 }
 .title-section {
     flex:8
 }
-.title {
+
+.wrapper .title {
     font-weight: bold;
     font-size: 1.5rem;
 }
-.artist {
+.wrapper .artist, 
+.wrapper .author {
     font-style: italic;
 }
 .date {
     font-size: 1rem;;
+}
+
+.link {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:hover {
+    color: crimson
 }

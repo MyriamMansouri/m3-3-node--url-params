@@ -1,6 +1,9 @@
 <div class="tile">
-    
         <p class="title-tile"><%- `${title}` %></p>
         <p class="artist-tile"><%- `${artist}` %></p>
         <p class="streams-tile"><%- `${streams}` %></p>
+        <div class="navigate">
+                <a href=<%- `/top50/song/${rank - 1}` %> id="previous">Previous</a>
+                <a href=<%- `/top50/song/${rank + 1}` %> id="next">Next</a>
+        </div>
 </div>

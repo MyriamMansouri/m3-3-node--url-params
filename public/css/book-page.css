@@ -1,0 +1,42 @@
+/* song page css */
+.book-page {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+}
+
+.tile .title {
+    margin-bottom: 5px;
+}
+
+.tile .author {
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin: 0;
+    margin: 5px;
+}
+
+.tile img{
+    width:38%;
+}
+
+.tile .description{
+    width:60%;
+    font-size: 0.8rem;
+    height: 240px;
+    overflow :hidden;
+    text-align: left;
+}
+
+
+.artist-tile {
+
+}
+
+.streams-tile{
+    font-size: 10rem;
+    font-weight: bold;
+    color:gray
+}

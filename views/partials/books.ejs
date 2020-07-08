@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <% books.forEach( book => { %>
+            <%- include('../partials/book', { book }) %>
+        <% }); %>
+    </ul>
+</div>
